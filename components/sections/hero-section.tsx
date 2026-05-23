@@ -51,7 +51,7 @@ export function HeroSection() {
                 id="hero-heading"
                 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl"
               >
-                {personalInfo.fullName}.
+                {personalInfo.name}.
               </h1>
             </Reveal>
             <Reveal delay={0.1}>
