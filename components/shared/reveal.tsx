@@ -8,9 +8,16 @@ type RevealProps = {
   delay?: number
   className?: string
   as?: "div" | "section" | "li" | "article"
-}
+  id?: string
+} & { [dataAttr: `data-${string}`]: string | undefined }
 
-export function Reveal({ children, delay = 0, className, as = "div" }: RevealProps) {
+export function Reveal({
+  children,
+  delay = 0,
+  className,
+  as = "div",
+  ...rest
+}: RevealProps) {
   const reduced = useReducedMotion()
   const MotionTag = motion[as] as typeof motion.div
 
@@ -21,6 +28,7 @@ export function Reveal({ children, delay = 0, className, as = "div" }: RevealPro
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.5, delay, ease: [0.22, 1, 0.36, 1] }}
       className={className}
+      {...rest}
     >
       {children}
     </MotionTag>

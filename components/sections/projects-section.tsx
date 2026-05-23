@@ -23,6 +23,7 @@ export function ProjectsSection() {
               key={p.name}
               delay={idx * 0.04}
               className="group flex flex-col gap-3 bg-background p-6 transition-colors hover:bg-muted/30"
+              {...(p.href ? { "data-cursor": "project", "data-cursor-label": "View" } : {})}
             >
               <div className="flex items-baseline justify-between gap-3">
                 <h3 className="text-base font-medium tracking-tight">{p.name}</h3>

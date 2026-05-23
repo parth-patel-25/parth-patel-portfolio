@@ -1,6 +1,7 @@
 import { ArrowRight, Download, Mail } from "lucide-react"
 import { buttonVariants } from "@/components/ui/button"
 import { Reveal } from "@/components/shared/reveal"
+import { Magnetic } from "@/components/shared/magnetic"
 import { personalInfo } from "@/data/resume"
 import { siteConfig } from "@/data/site-config"
 
@@ -34,19 +35,23 @@ export function HeroSection() {
         </Reveal>
         <Reveal delay={0.15}>
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <a
-              href={siteConfig.resumePath}
-              download
-              aria-label="Download resume PDF"
-              className={buttonVariants()}
-            >
-              <Download className="size-4" aria-hidden="true" />
-              Download Resume
-            </a>
-            <a href="#projects" className={buttonVariants({ variant: "outline" })}>
-              View Projects
-              <ArrowRight className="size-4" aria-hidden="true" />
-            </a>
+            <Magnetic>
+              <a
+                href={siteConfig.resumePath}
+                download
+                aria-label="Download resume PDF"
+                className={buttonVariants()}
+              >
+                <Download className="size-4" aria-hidden="true" />
+                Download Resume
+              </a>
+            </Magnetic>
+            <Magnetic>
+              <a href="#projects" className={buttonVariants({ variant: "outline" })}>
+                View Projects
+                <ArrowRight className="size-4" aria-hidden="true" />
+              </a>
+            </Magnetic>
             {email ? (
               <a
                 href={email.href}

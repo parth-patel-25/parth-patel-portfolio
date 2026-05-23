@@ -7,6 +7,7 @@ import { SkillsSection } from "@/components/sections/skills-section"
 import { EducationSection } from "@/components/sections/education-section"
 import { ContactSection } from "@/components/sections/contact-section"
 import { SmoothScrollProvider } from "@/components/shared/smooth-scroll-provider"
+import { CustomCursor } from "@/components/shared/custom-cursor"
 import { personalInfo } from "@/data/resume"
 import { siteConfig } from "@/data/site-config"
 
@@ -40,6 +41,7 @@ export default function Page() {
         Skip to content
       </a>
       <SmoothScrollProvider />
+      <CustomCursor />
       <Navbar />
       <main id="main">
         <HeroSection />
