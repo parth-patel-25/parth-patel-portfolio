@@ -35,7 +35,8 @@ export function HeroSection() {
                     height={132}
                     priority
                     sizes="112px"
-                    className="rounded-xl border border-border bg-black"
+                    draggable={false}
+                    className="pointer-events-none rounded-xl border border-border bg-black select-none"
                   />
                 </div>
               </Reveal>
@@ -111,7 +112,8 @@ export function HeroSection() {
                   height={260}
                   priority
                   sizes="220px"
-                  className="rounded-xl border border-border bg-black object-cover"
+                  draggable={false}
+                  className="pointer-events-none rounded-xl border border-border bg-black object-cover select-none"
                   style={{ width: 220, height: 260 }}
                 />
               </div>
