@@ -52,9 +52,9 @@ export type PersonalInfo = {
 export const personalInfo: PersonalInfo = {
   name: "Parth Patel",
   fullName: "Parth Pareshbhai Patel",
-  title: "React & React Native Developer",
+  title: "Full Stack Developer · React · Next.js · React Native · Node.js",
   summary:
-    "React & React Native developer building scalable web and mobile applications. Focused on TypeScript, modular architecture, performance optimization, and API integration — with experience in complex frontend challenges, real-time systems, and cross-platform development.",
+    "Full Stack Developer building scalable web, mobile, AI-powered, and automation-driven products. I work across React, Next.js, React Native, and Node.js — designing secure APIs, integrating AI/LLM systems, and shipping clean, performance-focused architecture.",
   availability: "Open to opportunities",
   socials: [
     { label: "parthpatelaa19@gmail.com", href: "mailto:parthpatelaa19@gmail.com", type: "email" },
@@ -65,11 +65,26 @@ export const personalInfo: PersonalInfo = {
 export const skills: SkillGroup[] = [
   { label: "Frontend", items: ["React.js", "Next.js", "TypeScript", "JavaScript", "HTML", "CSS"] },
   { label: "Mobile", items: ["React Native"] },
-  { label: "State & Data", items: ["TanStack Query", "Redux Toolkit", "RTK Query"] },
-  { label: "Architecture", items: ["Feature-based structure", "Separation of Concerns"] },
+  { label: "Backend", items: ["Node.js", "Express.js", "NestJS", "REST APIs", "Next.js API Routes"] },
+  { label: "Database", items: ["PostgreSQL", "MongoDB", "Supabase"] },
+  { label: "State & Data", items: ["Redux Toolkit", "RTK Query", "TanStack Query"] },
+  {
+    label: "AI & Automation",
+    items: ["OpenAI APIs", "LLM APIs", "Prompt Engineering", "Puppeteer", "Playwright"],
+  },
+  {
+    label: "Architecture & Auth",
+    items: [
+      "Feature-based structure",
+      "Separation of Concerns",
+      "JWT Authentication",
+      "Role-Based Access Control",
+      "WebSockets",
+    ],
+  },
+  { label: "Performance", items: ["Memoization", "Rendering optimization", "Lazy loading"] },
   { label: "Forms & Validation", items: ["Formik"] },
-  { label: "Performance", items: ["Memoization", "Rendering optimization"] },
-  { label: "Tools", items: ["Git", "Babel", "Webpack", "Vite"] },
+  { label: "Tools & DevOps", items: ["Git", "Vite", "Webpack", "Babel", "Docker (Basics)", "Vercel"] },
 ]
 
 export const experience: Experience[] = [
@@ -79,13 +94,14 @@ export const experience: Experience[] = [
     start: "Sep 2025",
     end: "Present",
     bullets: [
-      "Built scalable frontend and mobile architectures using modular design.",
-      "Developed reusable components and custom hooks.",
-      "Integrated APIs with error mapping and fallback handling.",
-      "Optimized performance and handled cross-platform dependencies.",
-      "Implemented route protection and permission-based access control.",
+      "Built scalable frontend, mobile, and backend systems using React, Next.js, React Native, and Node.js.",
+      "Developed reusable components, custom hooks, internal dashboards, and secure API-driven workflows.",
+      "Integrated APIs with strong validation, error mapping, fallback handling, and role-based access control.",
+      "Integrated AI/LLM APIs for intelligent chatbot and assistant features.",
+      "Built automation workflows with Node.js, Puppeteer, and Playwright for data extraction and processing.",
+      "Improved performance through modular architecture, rendering optimization, and clean separation of concerns.",
     ],
-    stack: ["React", "React Native", "TypeScript", "Redux Toolkit"],
+    stack: ["React", "Next.js", "React Native", "Node.js", "TypeScript", "Redux Toolkit"],
   },
 ]
 
@@ -132,14 +148,36 @@ export const projects: Project[] = [
   },
   {
     name: "Wellness Vault",
-    description: "Legacy codebase refactored into a modular TypeScript architecture with realtime features.",
+    description: "Health platform combining a modular TypeScript frontend with secure AI-powered Node.js APIs.",
     bullets: [
-      "Refactored legacy codebase into modular structure with TypeScript.",
-      "Built reusable components and a global styling system.",
-      "Implemented real-time features using sockets.",
-      "Developed barcode scanner with webcam and mobile torch support.",
+      "Refactored legacy codebase into modular TypeScript architecture with reusable components and a global styling system.",
+      "Built an AI-powered health assistant using LLM APIs.",
+      "Implemented document and medical report processing via secure Node.js APIs.",
+      "Added JWT authentication with role-based dashboards.",
+      "Built real-time features with WebSockets and a barcode scanner (webcam + mobile torch).",
     ],
-    stack: ["TypeScript", "React", "Sockets"],
+    stack: ["TypeScript", "Node.js", "LLM APIs", "WebSockets"],
+  },
+  {
+    name: "AI Multi-Agent Blog Generator",
+    description: "Full-stack multi-agent content platform with real-time LLM streaming.",
+    bullets: [
+      "Built full-stack app with Next.js and Node.js APIs.",
+      "Designed multi-agent architecture (research, writing, and SEO agents).",
+      "Integrated LLM APIs with real-time streaming responses.",
+      "Added Markdown export and publishing workflows.",
+    ],
+    stack: ["Next.js", "Node.js", "LLM APIs"],
+  },
+  {
+    name: "Automation & Scraping Engine",
+    description: "Large-scale scraping and automation system with a monitoring dashboard.",
+    bullets: [
+      "Built scraping pipelines with Puppeteer and Playwright.",
+      "Handled data processing, scheduling, and efficient request handling.",
+      "Built a dashboard to monitor and manage automation tasks.",
+    ],
+    stack: ["Node.js", "Puppeteer", "Playwright"],
   },
 ]
 
